@@ -50,14 +50,14 @@ end
 
 action :set do
   converge_if_changed do
-    shell_out!('gluster', 'volume', 'set', volume, key, value)
+    shell_out!('gluster', 'volume', 'set', new_resource.volume, new_resource.key, new_resource.value)
   end
 end
 
 action :reset do
   if current_resource # ~FC023
     converge_by ['reset value to default'] do
-      shell_out!('gluster', 'volume', 'reset', volume, key)
+      shell_out!('gluster', 'volume', 'reset', new_resource.volume, new_resource.key)
     end
   end
 end
