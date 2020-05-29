@@ -182,6 +182,7 @@ node['gluster']['server']['volumes'].each do |volume_name, volume_values|
         action :set
       else
         action :reset
+        value  ""
       end
     end
 
