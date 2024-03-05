@@ -67,5 +67,5 @@ when 'redhat', 'centos'
     gpgkey gpg_url
     gpgcheck !gpg_url.nil?
     action :create
-  end
+  end unless node.read('gluster', 'leave_repo')==true
 end

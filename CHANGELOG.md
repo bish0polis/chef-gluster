@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+## v6.2.3 (2024-03-04)
+- **[Venus #510] - Don't always install the YUM repo
+
 ## v6.2.0 (2017-05-03)
 - **[PR #96](https://github.com/shortdudey123/chef-gluster/pull/96)** - Update kitchen-vagrant
 - **[PR #97](https://github.com/shortdudey123/chef-gluster/pull/97)** - Fetch 3.9 and 3.10 RPMs from mirror.centos.org now they're availabl
